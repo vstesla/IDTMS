@@ -1,16 +1,20 @@
-# 这是一个示例 Python 脚本。
+import sys
+sys.path.append(r"D:\Document\Desktop\IDTMS")
 
-# 按 Shift+F10 执行或将其替换为您的代码。
-# 按 双击 Shift 在所有地方搜索类、文件、工具窗口、操作和设置。
+from image_processing import process
+import os
 
-
-def print_hi(name):
-    # 在下面的代码行中使用断点来调试脚本。
-    print(f'Hi, {name}')  # 按 Ctrl+F8 切换断点。
-
-
-# 按间距中的绿色按钮以运行脚本。
 if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# 访问 https://www.jetbrains.com/help/pycharm/ 获取 PyCharm 帮助
+    path=r'D:\Document\Desktop\IDTMS\1511602118787317762\\'
+    # picture_filename='1663603666880.jpg'
+    i=0
+    for filename in os.listdir(path):
+            # image_path=path+picture_filename
+            tempreture = process(path,filename,i)
+            if tempreture!=None:
+                # TODO 存入数据库
+                pass
+            else:
+                # TODO 读取数据库的数据
+                pass
+            i+=1
