@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import pytesseract
 import os
-os.environ['TESSDATA_PREFIX'] = r'D:\Program Files\Tesseract-OCR\tessdata'
+os.environ['TESSDATA_PREFIX'] = r'C:\Program Files\Tesseract-OCR\tessdata'
 
 
 def show(name):
@@ -22,7 +22,7 @@ def extract_hot_areas(image_path, temperature_threshold):
 
     return hot_areas
 
-def process(path,filename,sn):
+def process(path,filename):
     # 读取图像
     image_path = path+filename
 
@@ -122,11 +122,11 @@ def process(path,filename,sn):
         if w<6 or h<6:
             continue
         else:
-            cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 255), 2)
+            cv2.rectangle(img, (x, y), (x + w, y + h), (0, 0, 0), 2)
 
     # show(img)
 
-    cv2.imwrite("./processed_images/" + str(sn)+'.jpg',img)
+    cv2.imwrite("./processed_images/" + filename,img)
     #3
     x, y, w, h = 1000, 90, 200, 80
 
