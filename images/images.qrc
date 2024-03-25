@@ -1,0 +1,13 @@
+<RCC>
+  <qresource prefix="img">
+    <file>工业设备温度监测系统.png</file>
+    <file>帮助.png</file>
+    <file>保存.png</file>
+    <file>撤销.png</file>
+    <file>检索.png</file>
+    <file>上一个.png</file>
+    <file>添加图片.png</file>
+    <file>温度.png</file>
+    <file>下一个.png</file>
+  </qresource>
+</RCC>

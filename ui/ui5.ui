@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>工业设备温度监测系统_帮助</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#MainWindow{
+	background-color: #ebf7ff;}
+QPushButton{
+    background-color:#18a085;
+    color:rgb(255, 255, 255);
+    border:2px solid #00858f;
+    border-radius:5px;
+}
+QPushButton:pressed{
+    padding-top:5px;
+    padding-left:5px;
+}
+QPushButton:hover{
+ padding-bottom:5px;
+}
+QLineEdit{
+ border:2px solid #00858f;
+    border-radius:5px;}
+*{font:bold 12pt &quot;楷体&quot;;}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
